@@ -1,0 +1,38 @@
+REM TITLE Exercise 2-3
+REM AUTHOR Crash
+REM DESCRIPTION Mac: Open document, type "Hello, World!", alternating between red and green blinks after each character
+ATTACKMODE HID STORAGE
+
+
+DELAY 3000
+COMMAND SPACE
+DELAY 100
+STRING textedit
+DELAY 100
+ENTER
+DELAY 100
+STRING H
+LED_G
+STRING e
+LED_R
+STRING l
+LED_G
+STRING l
+LED_R
+STRING o
+LED_G
+STRING ,
+LED_R
+STRING  
+LED_G
+STRING W
+LED_R
+STRING o
+LED_G
+STRING r
+LED_R
+STRING l
+LED_G
+STRING d
+LED_R
+STRING !

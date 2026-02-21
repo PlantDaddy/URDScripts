@@ -1,0 +1,4 @@
+REM TITLE Exercise 3-3
+REM AUTHOR Crash
+REM DESCRIPTION Spoof a mac keyboard to bypass the mac keyboard assistant
+ATTACKMODE HID STORAGE VID_05AC PID_021E

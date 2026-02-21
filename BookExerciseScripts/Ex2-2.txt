@@ -1,0 +1,22 @@
+REM TITLE Exercise 2-2
+REM AUTHOR Crash
+REM DESCRIPTION Mac: Open document, type 'hello', wait for button press, type 'world', continuously blink led green
+ATTACKMODE HID STORAGE
+
+
+DELAY 3000
+COMMAND SPACE
+DELAY 100
+STRING textedit
+DELAY 100
+ENTER
+DELAY 100
+STRING Hello, 
+WAIT_FOR_BUTTON_PRESS
+STRING World!
+WHILE TRUE
+    LED_G
+    DELAY 500
+    LED_OFF
+    DELAY 500
+END_WHILE
