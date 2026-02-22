@@ -1,0 +1,198 @@
+REM TITLE Exercise 5-1
+REM AUTHOR Crash
+REM DESCRIPTION Open a text editor, type the lyrics to 'Never Gonna Give You Up' with an increasing delay between each line
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $WAIT_IN_MS = 100
+DELAY 3000
+COMMAND SPACE
+DELAY 250
+STRINGLN textedit
+DELAY 500
+STRINGLN Desert you
+DELAY $WAIT_IN_MS
+STRINGLN Ooh-ooh-ooh-ooh
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN We're no strangers to love
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN You know the rules and so do I
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN A full commitment's what I'm thinkin' of
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN You wouldn't get this from any other guy
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN I just wanna tell you how I'm feeling
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Gotta make you understand
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN We've known each other for so long
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Your heart's been aching, but you're too shy to say it
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Inside, we both know what's been goin' on
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN We know the game, and we're gonna play it
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN And if you ask me how I'm feeling
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Don't tell me you're too blind to see
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Ooh (Give you up)
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Ooh-ooh (Give you up)
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN (Ooh-ooh)
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give, never gonna give (Give you up)
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN (Ooh-ooh)
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give, never gonna give (Give you up)
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN We've known each other for so long
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Your heart's been aching, but you're too shy to say it
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Inside, we both know what's been goin' on
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN We know the game, and we're gonna play it
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN I just wanna tell you how I'm feeling
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Gotta make you understand
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+$WAIT_IN_MS = ($WAIT_IN_MS + 100)
+DELAY $WAIT_IN_MS

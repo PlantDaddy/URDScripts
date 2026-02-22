@@ -1,0 +1,145 @@
+REM TITLE Exercise 6-1
+REM AUTHOR Crash
+REM DESCRIPTION Open a text editor, type the lyrics to 'Never Gonna Give You Up' with a predefined variable $WAIT_N_MS
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $WAIT_IN_MS = 0
+
+REM Set $DELAY_PER_LINE to TRUE if you want to set a delay between each line of
+REM lyrics. Defaults to FALSE. If set to TRUE, a default delay of 100ms per line
+REM is used, defined as $WAIT_IN_MS. Change as needed.
+VAR $DELAY_PER_LINE = FALSE
+IF $DELAY_PER_LINE THEN
+    VAR $WAIT_IN_MS = 100
+END_IF
+
+DELAY 3000
+COMMAND SPACE
+DELAY 250
+STRINGLN textedit
+DELAY 500
+STRINGLN Desert you
+DELAY $WAIT_IN_MS
+STRINGLN Ooh-ooh-ooh-ooh
+DELAY $WAIT_IN_MS
+STRINGLN Hurt you
+DELAY $WAIT_IN_MS
+STRINGLN We're no strangers to love
+DELAY $WAIT_IN_MS
+STRINGLN You know the rules and so do I
+DELAY $WAIT_IN_MS
+STRINGLN A full commitment's what I'm thinkin' of
+DELAY $WAIT_IN_MS
+STRINGLN You wouldn't get this from any other guy
+DELAY $WAIT_IN_MS
+STRINGLN I just wanna tell you how I'm feeling
+DELAY $WAIT_IN_MS
+STRINGLN Gotta make you understand
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+DELAY $WAIT_IN_MS
+STRINGLN We've known each other for so long
+DELAY $WAIT_IN_MS
+STRINGLN Your heart's been aching, but you're too shy to say it
+DELAY $WAIT_IN_MS
+STRINGLN Inside, we both know what's been goin' on
+DELAY $WAIT_IN_MS
+STRINGLN We know the game, and we're gonna play it
+DELAY $WAIT_IN_MS
+STRINGLN And if you ask me how I'm feeling
+DELAY $WAIT_IN_MS
+STRINGLN Don't tell me you're too blind to see
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+DELAY $WAIT_IN_MS
+STRINGLN Ooh (Give you up)
+DELAY $WAIT_IN_MS
+STRINGLN Ooh-ooh (Give you up)
+DELAY $WAIT_IN_MS
+STRINGLN (Ooh-ooh)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give, never gonna give (Give you up)
+DELAY $WAIT_IN_MS
+STRINGLN (Ooh-ooh)
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give, never gonna give (Give you up)
+DELAY $WAIT_IN_MS
+STRINGLN We've known each other for so long
+DELAY $WAIT_IN_MS
+STRINGLN Your heart's been aching, but you're too shy to say it
+DELAY $WAIT_IN_MS
+STRINGLN Inside, we both know what's been goin' on
+DELAY $WAIT_IN_MS
+STRINGLN We know the game, and we're gonna play it
+DELAY $WAIT_IN_MS
+STRINGLN I just wanna tell you how I'm feeling
+DELAY $WAIT_IN_MS
+STRINGLN Gotta make you understand
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna give you up
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna let you down
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna run around and desert you
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna make you cry
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna say goodbye
+DELAY $WAIT_IN_MS
+STRINGLN Never gonna tell a lie and hurt you
+DELAY $WAIT_IN_MS
