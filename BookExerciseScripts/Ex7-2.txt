@@ -1,0 +1,37 @@
+REM TITLE Exercise 7-2
+REM AUTHOR Crash
+REM_BLOCK DESCRIPTION
+    MacOS: Open textedit, and type the lyrics to "John Jacob Jingleheimer 
+    Schmidt" X times as set by variable "NUM_TIMES"
+END_REM
+
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $NUM_TIMES = 4
+BUTTON_DEF
+    WHILE TRUE
+        LED_R
+        LED_OFF
+    END_WHILE
+END_BUTTON
+DELAY 3000
+
+COMMAND SPACE
+DELAY 250
+STRINGLN textedit
+DELAY 750
+
+WHILE ( $NUM_TIMES > 0 )
+    STRINGLN This is the song that doesn't end
+    STRINGLN It just goes on and on, my friend
+    STRINGLN Some people started singing it
+    STRINGLN Not knowing what it was
+    STRINGLN And they'll continue singing it
+    STRINGLN Forever just because
+    $NUM_TIMES = ( $NUM_TIMES - 1 )
+END_WHILE
+
+WHILE TRUE
+    LED_G
+    LED_OFF
+END_WHILE
+

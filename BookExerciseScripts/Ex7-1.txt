@@ -1,0 +1,18 @@
+REM TITLE Exercise 7-1
+REM AUTHOR Crash
+REM DESCRIPTION MacOS: Open textedit, and forever type the lyrics to "This is the song that never ends"
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+DELAY 3000
+
+COMMAND SPACE
+DELAY 250
+STRINGLN textedit
+DELAY 750
+WHILE TRUE
+    STRINGLN This is the song that doesn't end
+    STRINGLN It just goes on and on, my friend
+    STRINGLN Some people started singing it
+    STRINGLN Not knowing what it was
+    STRINGLN And they'll continue singing it
+    STRINGLN Forever just because
+END_WHILE
