@@ -1,0 +1,37 @@
+REM TITLE Exercise 7-5
+REM AUTHOR Crash
+REM_BLOCK DESCRIPTION
+   Mac: Opens textedit, Types a ":-)" repeatedly unless the button is pushed.
+    If the button is pushed, type ":-(" repeatedly until the button is pushed.
+    If the button is pushed again, revert back to ":-)"
+END_REM
+
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $EMOJI = TRUE
+DELAY 3000
+BUTTON_DEF
+    IF $EMOJI THEN
+        $EMOJI = FALSE
+    ELSE IF $EMOJI == FALSE THEN
+        $EMOJI = TRUE
+    END_IF
+    WHILE TRUE
+        IF $EMOJI THEN
+            STRINGLN :-)
+        ELSE IF $EMOJI == FALSE THEN
+            STRINGLN :-(
+        END_IF
+    END_WHILE
+END_BUTTON
+
+COMMAND SPACE
+DELAY 250
+STRINGLN textedit
+DELAY 750
+WHILE TRUE
+    IF $EMOJI THEN
+        STRINGLN :-)
+    ELSE IF $EMOJI == FALSE THEN
+        STRINGLN :-(
+    END_IF
+END_WHILE
