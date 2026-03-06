@@ -1,0 +1,28 @@
+REM TITLE Exercise 8-1
+REM AUTHOR Crash
+REM_BLOCK DESCRIPTION
+   MultiOS: Wait for button presses and execute different functions based on
+    the number of presses
+END_REM
+
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $PRESSES = 0
+$_BUTTON_TIMEOUT = 100
+FUNCTION TWO_PRESS ()
+    STRINGLN I was pressed twice!
+END_FUNCTION
+FUNCTION FIVE_PRESS ()
+    STRINGLN I was pressed five times!
+END_FUNCTION
+DELAY 3000
+
+WHILE TRUE
+    WAIT_FOR_BUTTON_PRESS
+    $PRESSES = $PRESSES + 1
+    IF ( $PRESSES == 2 ) THEN
+        TWO_PRESS()
+    ELSE IF ( $PRESSES == 5 ) THEN
+        FIVE_PRESS()
+    END_IF
+END_WHILE
+    

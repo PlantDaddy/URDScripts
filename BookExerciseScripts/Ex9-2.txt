@@ -1,0 +1,33 @@
+REM TITLE Exercise 9-2
+REM AUTHOR Crash
+REM_BLOCK DESCRIPTION
+   Mac: Open textedit and ask the payload to guess a number between 1 and 10. 
+    Then check if the randomly generated number matches a randomly guessed
+    number and type if the payload guessed correctly or not.
+END_REM
+
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+$_RANDOM_MIN = 2
+$_RANDOM_MAX = 9
+VAR $GUESS = $_RANDOM_INT
+VAR $TRICK = $_RANDOM_INT
+FUNCTION RAND_NUM ()
+    $GUESS = $_RANDOM_INT
+    $TRICK = $_RANDOM_INT
+END_FUNCTION
+DELAY 3000
+
+COMMAND SPACE
+DELAY 250
+STRINGLN textedit
+DELAY 750
+WHILE TRUE
+    STRINGLN I'm thinking of a number between 1 and 10
+    IF ( $GUESS == $TRICK ) THEN
+        STRINGLN I guessed correctly
+    ELSE IF ( $GUESS != $TRICK ) THEN
+        STRINGLN I guessed incorrectly
+    END_IF
+    DELAY 5000
+    RAND_NUM()
+END_WHILE
