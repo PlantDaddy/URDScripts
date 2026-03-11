@@ -1,0 +1,23 @@
+REM TITLE Exercise 12-4
+REM AUTHOR Crash
+REM_BLOCK DESCRIPTION Win/Nix: Swap the functionality of the numlock and caps
+    lock keys
+END_REM
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $CAPS = $_CAPSLOCK_ON
+VAR $NUM = $_NUMLOCK_ON
+DELAY 3000
+
+WHILE TRUE
+    IF ( $CAPS != $_CAPSLOCK_ON ) THEN
+        NUMLOCK
+        CAPSLOCK
+        $CAPS = $_CAPSLOCK_ON
+        $NUM = $_NUMLOCK_ON
+    ELSE IF ( $NUM != $_NUMLOCK_ON ) THEN
+        CAPSLOCK
+        NUMLOCK
+        $CAPS = $_CAPSLOCK_ON
+        $NUM = $_NUMLOCK_ON
+    END_IF
+END_WHILE

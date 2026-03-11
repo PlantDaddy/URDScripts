@@ -1,0 +1,23 @@
+REM TITLE Exercise 12-3
+REM AUTHOR Crash
+REM_BLOCK DESCRIPTION Run a windows payload if capslock is pressed, linux if 
+    numlock is pressed
+END_REM
+ATTACKMODE HID STORAGE VID_05AC PID_021E MAN_FUCK PROD_ICE SERIAL_111111
+VAR $CAPS = $_CAPSLOCK_ON
+VAR $NUM = $_NUMLOCK_ON
+DELAY 3000
+
+WHILE TRUE
+    IF ( $CAPS != $_CAPSLOCK_ON ) THEN
+        INJECT_MOD
+        GUI r
+        DELAY 250
+        STRINGLN calc.exe
+        $CAPS = $_CAPSLOCK_ON
+    ELSE IF ( $NUM != $_NUMLOCK_ON ) THEN
+        INJECT_MOD
+        ALT F4
+        $NUM = $_NUMLOCK_ON
+    END_IF
+END_WHILE
